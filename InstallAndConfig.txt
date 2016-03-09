@@ -1,0 +1,49 @@
+Install Git For Windows
+git config --global user.name "git user"
+git config --global user.email "your email"
+Create Folder For WorkSpace (D:\GitHubRepo)
+cd D:\GitHubRepo
+git init
+
+Note1 - git init create .git folder as master if already exsits in WorkSpace (D:\GitHubRepo)
+Note2 - All above commands made only once after installation / Update git
+-----------------------------------------
+
+From Web Create Repository  (Demo)
+From Shell
+git remote add origin https://github.com/haimbaba/Demo.git
+
+* origin is name not save word in command
+*This Run Only Once or if run again command: git init
+
+clone:
+cd D:\GitHubRepo
+git clone https://github.com/haimbaba/Demo.git
+
+Note - get colne of Repository to  D:\GitHubRepo\Demo
+
+Add Your Files to D:\GitHubRepo\Demo
+cd D:\GitHubRepo\Demo
+git add FileName
+git commit -m FileName
+git push origin master
+
+
+Delete File
+-----------
+Clone Repository (Demo)
+cd D:\GitHubRepo\Demo
+git rm FileName
+git commit -m FileName
+git push origin master
+
+
+Switch Remote Before push 
+----------------------------
+git remote -v
+Show which remote set
+
+git remote set-url origin https://github.com/USERNAME/OTHERREPOSITORY.git
+
+git remote set-url origin https://github.com/haimbaba/Demo.git
+git remote -v
